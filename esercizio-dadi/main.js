@@ -18,13 +18,13 @@ console.log('Numero dado di ' + giocatorePc + ' è ', numeroPc);
 
 // 5) Genero un array con dei messaggi risposta al gioco dei dadi da usare nelle condizioni. 
 let messaggiRisultato = ["HAI PERSO!", "HAI VINTO!", "AVETE PAREGGIATO!"];
-let risultato;
+let risultato = nomeGiocatore;
 
 // 6) condizioni vincita: 
 if (numeroPc > numeroGiocatore) {
-    risultato = nomeGiocatore + ' ' + messaggiRisultato[0];
+    risultato += ' ' + messaggiRisultato[0];
 } else if (numeroPc < numeroGiocatore) {
-    risultato = nomeGiocatore + ' ' + messaggiRisultato[1];
+    risultato += ' ' + messaggiRisultato[1];
 } else {
     risultato = messaggiRisultato[2];
 }
