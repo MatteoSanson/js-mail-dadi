@@ -20,9 +20,11 @@ Stabilire il vincitore, in base a chi fa il punteggio più alto.
 ### Svolgimento
 1) Con un prompt chiedo il nome del giocatore e salvo il suo nome in una variabile giocatore.
 2) Ho una variabile giocatorePc.
-3) genero un numero random da 1 a 6 che salvo in una variabile numeroGiocatore e mostro in console.
-4) genero un numero random da 1 a 6 che salvo in una variabile numeroPC e mostro in cosole.
-5) condizioni vincita:
+3) Genero un numero random da 1 a 6 che salvo in una variabile numeroGiocatore e mostro in console.
+4) Genero un numero random da 1 a 6 che salvo in una variabile numeroPC e mostro in cosole.
+5) Genero un array con dei messaggi risposta al gioco dei dadi da usare nelle condizioni.
+6) Condizioni vincita:
 - se numeroPc > numeroGiocatore compare il mesaggio "HAI PERSO!";
 - se numeroPc < numeroGiocatore compare il mesaggio "HAI VINTO!";
 - altrimenti compare il mesaggio "AVETE PAREGGIATO!";
+7) Stampo i messaggi in console e alert.

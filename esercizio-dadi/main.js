@@ -16,20 +16,20 @@ console.log('Numero dado di ' + nomeGiocatore + ' è ', numeroGiocatore);
 let numeroPc = Math.floor(Math.random() * 6) + 1;
 console.log('Numero dado di ' + giocatorePc + ' è ', numeroPc);
 
-// 5) condizioni vincita: 
+// 5) Genero un array con dei messaggi risposta al gioco dei dadi da usare nelle condizioni. 
+let messaggiRisultato = ["HAI PERSO!", "HAI VINTO!", "AVETE PAREGGIATO!"];
+let risultato;
+
+// 6) condizioni vincita: 
 if (numeroPc > numeroGiocatore) {
-    const risultato = nomeGiocatore + (' HAI PERSO!');
-    console.log(risultato);
-    let multiRiga = (nomeGiocatore + " " + numeroGiocatore + " -VS- " + giocatorePc + " " + numeroPc + '\n'+'\n' + risultato);
-    alert (multiRiga);
+    risultato = nomeGiocatore + ' ' + messaggiRisultato[0];
 } else if (numeroPc < numeroGiocatore) {
-    const risultato = nomeGiocatore + (' HAI VINTO!');
-    console.log(risultato);
-    let multiRiga = (nomeGiocatore + " " + numeroGiocatore + " -VS- " + giocatorePc + " " + numeroPc + '\n' + risultato);
-    alert (multiRiga);
+    risultato = nomeGiocatore + ' ' + messaggiRisultato[1];
 } else {
-    const risultato = ('AVETE PAREGGIATO!');
-    console.log(risultato);
-    let multiRiga = (nomeGiocatore + " " + numeroGiocatore + " -VS- " + giocatorePc + " " + numeroPc + '\n' + risultato);
-    alert (multiRiga);
+    risultato = nomeGiocatore + ' ' + messaggiRisultato[2];
 }
+
+// 7) Stampo i messaggi in console e alert. 
+console.log(risultato);
+let multiRiga = (nomeGiocatore + " " + numeroGiocatore + " - VS - " + giocatorePc + " " + numeroPc + '\n' + risultato);
+alert(multiRiga);
