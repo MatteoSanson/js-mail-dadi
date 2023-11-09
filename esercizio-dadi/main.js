@@ -26,7 +26,7 @@ if (numeroPc > numeroGiocatore) {
 } else if (numeroPc < numeroGiocatore) {
     risultato = nomeGiocatore + ' ' + messaggiRisultato[1];
 } else {
-    risultato = nomeGiocatore + ' ' + messaggiRisultato[2];
+    risultato = messaggiRisultato[2];
 }
 
 // 7) Stampo i messaggi in console e alert. 
