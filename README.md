@@ -9,7 +9,14 @@ stampa un messaggio appropriato sull’esito del controllo.
 <br>
 
 ### Svolgimento
-
+1) Creo un array con delle e-mail iniziali (per esempio 3).
+2) Inizio un ciclo di richiesta informazioni.
+3) Tramite prompt chiedo all'utente di inserire la sua email.
+4) Inizio un ciclo che scorre la lista delle email
+5) Condizione se la mail dell'utente è presente nella lista delle email si interrompe il ciclo.
+6) Quindi se la mail è presente apparirà un alert positivo.
+7) Se non presente si viene informati a riguardo e che da ora la mail farà parte della listaMail.
+8) Prompt richiesto all'utente per chiuedere o meno il ciclo iniziale.
 <br><br>
 
 ## Esercizio Dadi
